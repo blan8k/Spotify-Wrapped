@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#F3F4F6">
+
+        <Button
+            android:id="@+id/buttonFetchTopSongs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Spotify Wrapped"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/buttonViewHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View History"
+            android:layout_below="@id/buttonFetchTopSongs"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/buttonRequestNewToken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Spotify Information"
+            android:layout_below="@id/buttonViewHistory"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/buttonSpotifyAI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spotify AI"
+            android:layout_below="@+id/buttonRequestNewToken"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style"
+            android:textColor="@android:color/white" />
+
+
+        <Button
+            android:id="@+id/buttonEditAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Account Information"
+            android:layout_below="@id/buttonSpotifyAI"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:layout_below="@id/buttonEditAccount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is today a holiday?"
+            android:textColor="#333"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/buttonLogout"
+            android:layout_marginTop="30dp"
+            android:textSize="24sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="No special holiday"
+                android:background="@drawable/radio_button_selector"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="St. Patrick's Day"
+                android:background="@drawable/radio_button_selector"
+                android:padding="10dp"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Valentine's Day"
+                android:background="@drawable/radio_button_selector"
+                android:padding="10dp"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Halloween"
+                android:background="@drawable/radio_button_selector"
+                android:padding="10dp"
+                android:textSize="16sp" />
+        </RadioGroup>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter New Email"
+        android:inputType="textEmailAddress"/>
+
+    <Button
+        android:id="@+id/updateEmailButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Email"
+        android:layout_below="@id/emailField"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/newPasswordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter New Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/updateEmailButton"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/updatePasswordButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Password"
+        android:layout_below="@id/newPasswordField"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/deleteAccountButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Account"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/updatePasswordButton"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/goHomeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Home"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"/>
+</RelativeLayout>

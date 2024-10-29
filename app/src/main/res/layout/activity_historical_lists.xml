@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cool_background"
+    android:padding="16dp">
+
+<TextView
+android:id="@+id/textViewHeader"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Historical Wrapped"
+android:textSize="24sp"
+android:textColor="@color/black"
+    android:textStyle="bold"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    tools:ignore="HardcodedText" />
+
+    <!-- ListView for displaying history items -->
+<ListView
+android:id="@+id/listViewHistory"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/textViewHeader"
+android:layout_above="@+id/buttonHome"
+android:layout_marginTop="10dp"
+android:layout_marginBottom="16dp"
+/>
+<Button
+android:id="@+id/buttonHome"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentBottom="true"
+android:text="Home"
+android:background="@drawable/cool_button_bg"
+    android:textColor="@android:color/white"
+    android:padding="12dp"
+    tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
